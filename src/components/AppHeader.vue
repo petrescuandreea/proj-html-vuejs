@@ -22,7 +22,7 @@
                     <p>Pellentesque vitae viverra risus, sagitis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisl, ac felis.</p>
 
                     <!-- button  -->
-                    <div class="btn">Explore the menu</div>
+                    <div class="btn bg-white">Explore the menu</div>
                     
                 </div>
             </div>
@@ -49,6 +49,68 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
+.text-col {
+    width: 45%;
+    float: left;
+    color: white;
+    background-color: rgba(3,3,3,255);
+    padding: 40px 80px 0 80px;
 
+    .content {
+        margin: 120px 0;
+
+        .content-top {
+            display: flex;
+            align-items: center;
+
+            .line {
+                width: 60px;
+                border-bottom: 2px solid white;
+                margin-right: 60px;
+            }
+
+            h3 {
+                font-size: 15px;
+                font-weight: normal;
+                text-transform: uppercase;
+            }
+        }
+
+        .content-bottom {
+            // margin: 0 50px 0 120px;
+            margin-left: 120px;
+
+            h1 {
+                font-size: 55px;
+                text-transform: uppercase;
+                margin: 40px 0;
+            }
+
+            p {
+                line-height: 30px;
+                margin-bottom: 40px;
+            }
+
+            .btn {
+                text-transform: uppercase;
+                font-size: 12px;
+                border: 1px solid white;
+                padding: 10px 30px;
+                display: inline;
+                cursor: pointer;
+
+                &.bg-white:hover{
+                    color: black;
+                    background-color: white;
+                }
+            }
+        }
+    }
+}
 </style>
