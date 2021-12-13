@@ -3,26 +3,26 @@
         <!-- text column  -->
         <div class="text-col">
             <!-- logo -->
-            <img src="" alt="">
+            <img src="../assets/img/logo-restaurant.png" alt=" Avada restaurant logo">
 
             <!-- content  -->
             <div class="content">
                 <div class="content-top">
                     <!-- line  -->
-                    <div></div>
+                    <div class="line"></div>
 
-                    <h3></h3>
+                    <h3>The best table in town</h3>
                 </div>
 
                 <div class="content-bottom">
                     <!-- title  -->
-                    <h1></h1>
+                    <h1>Fine dining experience</h1>
 
                     <!-- text  -->
-                    <p></p>
+                    <p>Pellentesque vitae viverra risus, sagitis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisl, ac felis.</p>
 
                     <!-- button  -->
-                    <div></div>
+                    <div class="btn">Explore the menu</div>
                     
                 </div>
             </div>
