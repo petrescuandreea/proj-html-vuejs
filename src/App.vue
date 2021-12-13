@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <header>
-      <AppHeader/>
+      <AppHeader :links="headerNavLinks"/>
     </header>
 
 
@@ -27,6 +27,45 @@ export default {
     AppHeader,
     AppMain,
     AppFooter
+  },
+  data() {
+      return {
+        // header nav menu 
+        headerNavLinks: [
+          {
+              text: "Home",
+              url: "#",
+          },
+          {
+              text: "Culinary History",
+              url: "#",
+          },
+          {
+              text: "Our Team",
+              url: "#",
+          },
+          {
+              text: "Our Menu",
+              url: "#",
+          },
+          {
+              text: "Takeout",
+              url: "#",
+          },
+          {
+              text: "Bulletin",
+              url: "#",
+          },
+          {
+              text: "Reservation",
+              url: "#",
+          },
+          {
+              text: <i class="fas fa-shopping-cart"></i>,
+              url: "#",
+          }
+        ]
+      }
   }
 }
 </script>
