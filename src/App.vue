@@ -36,41 +36,49 @@ export default {
               text: "Home",
               badge: null,
               url: "#",
+              here: true,
           },
           {
               text: "Culinary History",
               badge: null,
               url: "#",
+              here: false,
           },
           {
               text: "Our Team",
               badge: null,
               url: "#",
+              here: false,
           },
           {
               text: "Our Menu",
               badge: null,
               url: "#",
+              here: false,
           },
           {
               text: "Takeout",
               badge: "New",
               url: "#",
+              here: false,
           },
           {
               text: "Bulletin",
               badge: null,
               url: "#",
+              here: false,
           },
           {
               text: "Reservations",
               badge: null,
               url: "#",
+              here: false,
           },
           {
               icon: "fas fa-shopping-cart",
               badge: null,
               url: "#",
+              here: false,
           }
         ]
       }
