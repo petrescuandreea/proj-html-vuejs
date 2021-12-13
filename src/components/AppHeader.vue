@@ -29,22 +29,23 @@
 
         <!-- image column  -->
         <div class="image-col">
-            <img src="../assets/img/slider52x.jpg" alt="">
-
-            <!-- nav menu  -->
-            <nav>
-                <ul>
-                    <li v-for="link, i in links" :key="i">
-                        <a v-if="link.icon" :href="link.url">
-                            <i :class="link.icon"></i> {{ link.badge}}
-                        </a>
-                        <a v-else :href="link.url">
-                            {{ link.text }} {{ link.badge}}
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-
+            <div class="overlay">
+                <!-- nav menu  -->
+                <div class="nav-container">
+                    <nav>
+                        <ul>
+                            <li v-for="link, i in links" :key="i">
+                                <a v-if="link.icon" :href="link.url">
+                                    <i :class="link.icon"></i> {{ link.badge }}
+                                </a>
+                                <a v-else :href="link.url" :class="link.here ? 'active' : ''">
+                                    {{ link.text }} {{ link.badge }}
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </div>
     </section>
 </template>
@@ -128,11 +129,43 @@ section {
         width: 55%;
         height: 100%;
         float: left;
+        position: relative;
+        background-image: url("../assets/img/slider52x.jpg");
+        background-size: cover;
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.2);
+
+            .nav-container {
+                position: absolute;
+                top: 45px;
+                width: 100%;
+                text-align: center;
     
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+                ul {
+    
+                    li {
+                        display: inline-block;
+                        margin-right: 18px;
+    
+                        a {
+                            font-size: 15px;
+                            color: #9c958f;
+                            text-decoration: none;
+                            font-weight: bold;
+
+                            &.active {
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
