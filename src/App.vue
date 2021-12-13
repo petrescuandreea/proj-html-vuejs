@@ -63,7 +63,7 @@ export default {
               url: "#",
           },
           {
-              text: "Reservation",
+              text: "Reservations",
               badge: null,
               url: "#",
           },
