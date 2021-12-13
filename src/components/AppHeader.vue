@@ -1,52 +1,58 @@
 <template>
     <section>
-        <!-- <div class="clearfix"> -->
-            <!-- text column  -->
-            <div class="text-col">
-                <!-- logo -->
-                <img src="../assets/img/logo-restaurant.png" alt=" Avada restaurant logo">
+        <div class="text-col">
+            <!-- logo -->
+            <img src="../assets/img/logo-restaurant.png" alt=" Avada restaurant logo">
 
-                <!-- content  -->
-                <div class="content">
-                    <div class="content-top">
-                        <!-- line  -->
-                        <div class="line"></div>
+            <!-- content  -->
+            <div class="content">
+                <div class="content-top">
+                    <!-- line  -->
+                    <div class="line"></div>
 
-                        <h3>The best table in town</h3>
-                    </div>
+                    <h3>The best table in town </h3>
+                </div>
 
-                    <div class="content-bottom">
-                        <!-- title  -->
-                        <h1>Fine dining experience</h1>
+                <div class="content-bottom">
+                    <!-- title  -->
+                    <h1>Fine dining experience</h1>
 
-                        <!-- text  -->
-                        <p>Pellentesque vitae viverra risus, sagitis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisl, ac felis.</p>
+                    <!-- text  -->
+                    <p>Pellentesque vitae viverra risus, sagitis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisl, ac felis.</p>
 
-                        <!-- button  -->
-                        <div class="btn bg-white">Explore the menu</div>
-                        
-                    </div>
+                    <!-- button  -->
+                    <div class="btn bg-white">Explore the menu</div>
+                    
                 </div>
             </div>
+        </div>
 
-            <!-- image column  -->
-            <div class="image-col">
-                <img src="../assets/img/slider52x.jpg" alt="">
-                <!-- nav menu  -->
-                <!-- <nav>
-                    <ul>
-                        <li><a href="#"></a></li>
-                    </ul>
-                </nav> -->
+        <!-- image column  -->
+        <div class="image-col">
+            <img src="../assets/img/slider52x.jpg" alt="">
 
-            </div>
-        <!-- </div> -->
+            <!-- nav menu  -->
+            <nav>
+                <ul>
+                    <li v-for="link, i in links" :key="i">
+                        <a :href="link.url">
+                            {{ link.text }}
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
     </section>
 </template>
 
 <script>
+
 export default {
   name: 'AppHeader',
+  props: {
+      links: Array,
+  }
 }
 </script>
 
