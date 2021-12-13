@@ -35,8 +35,11 @@
             <nav>
                 <ul>
                     <li v-for="link, i in links" :key="i">
-                        <a :href="link.url">
-                            {{ link.text }}
+                        <a v-if="link.icon" :href="link.url">
+                            <i :class="link.icon"></i> {{ link.badge}}
+                        </a>
+                        <a v-else :href="link.url">
+                            {{ link.text }} {{ link.badge}}
                         </a>
                     </li>
                 </ul>
