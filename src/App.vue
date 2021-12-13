@@ -34,34 +34,42 @@ export default {
         headerNavLinks: [
           {
               text: "Home",
+              badge: null,
               url: "#",
           },
           {
               text: "Culinary History",
+              badge: null,
               url: "#",
           },
           {
               text: "Our Team",
+              badge: null,
               url: "#",
           },
           {
               text: "Our Menu",
+              badge: null,
               url: "#",
           },
           {
               text: "Takeout",
+              badge: "New",
               url: "#",
           },
           {
               text: "Bulletin",
+              badge: null,
               url: "#",
           },
           {
               text: "Reservation",
+              badge: null,
               url: "#",
           },
           {
-              text: <i class="fas fa-shopping-cart"></i>,
+              icon: "fas fa-shopping-cart",
+              badge: null,
               url: "#",
           }
         ]
