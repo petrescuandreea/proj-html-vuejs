@@ -16,7 +16,7 @@
                     <!-- text  -->
                     <p>Pellentesque vitae viverra risus, sagitis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisl, ac felis.</p>
                     <!-- button  -->
-                    <div class="btn bg-white">Explore the menu</div>
+                    <button>Explore the menu</button>
                     
                 </div>
             </div>
@@ -106,15 +106,17 @@ section {
                     margin-bottom: 40px;
                 }
     
-                .btn {
+                button {
                     text-transform: uppercase;
                     font-size: 12px;
                     border: 1px solid white;
+                    background-color: black;
+                    color: white;
                     padding: 10px 30px;
                     display: inline;
                     cursor: pointer;
     
-                    &.bg-white:hover{
+                    &:hover{
                         color: black;
                         background-color: white;
                     }
