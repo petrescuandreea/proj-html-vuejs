@@ -3,6 +3,7 @@
         <CaliforniaRollsProduct/>
         <Reservations/>
         <CulinaryHistory/>
+        <Team/>
     </div>
 </template>
 
@@ -11,6 +12,7 @@
 import CaliforniaRollsProduct from '@/components/CaliforniaRollsProduct.vue';
 import Reservations from '@/components/Reservations.vue';
 import CulinaryHistory from '@/components/CulinaryHistory.vue';
+import Team from '@/components/Team.vue';
 
 export default {
   name: 'AppMain',
@@ -18,6 +20,7 @@ export default {
     CaliforniaRollsProduct,
     Reservations,
     CulinaryHistory,
+    Team,
   }
 }
 </script>
