@@ -14,6 +14,7 @@
           <!-- social media channels -->
           <div id="sm-channels">
 
+
           </div>
 
         </div>
@@ -44,6 +45,23 @@ export default {
     background-image: url("../assets/img/footer2x.jpg");
     background-size: cover;
     background-position: center;
+    display: flex;
+    align-items: center;
+
+    .content {
+      width: 30%;
+      margin: 0 auto;
+      text-align: center;
+
+      img {
+        margin: 20px 0;
+      }
+
+      p {
+        color: #857f7c;
+        line-height: 25px;
+      }
+    }
   }
 
   #copyright {
