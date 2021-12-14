@@ -87,6 +87,11 @@ export default {
 
             img {
                 width: 100%;
+                cursor: pointer;
+
+                &:hover {
+                    box-shadow: 0 1px 5px black;
+                }
             }
 
             span {
