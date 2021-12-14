@@ -67,7 +67,7 @@ export default {
             padding: 40px 80px 0 80px;
         
             .content {
-                margin: 120px 0;
+                margin: 110px 0;
         
                 .content-top {
                     display: flex;
