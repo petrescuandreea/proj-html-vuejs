@@ -35,5 +35,18 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+#footer {
+
+  #copyright {
+    text-align: center;
+    padding: 30px 0;
+    background-color: rgba(3,3,3,255);
+
+    span {
+      font-size: 15px;
+      color: white;
+    }
+  }
+}
 
 </style>
