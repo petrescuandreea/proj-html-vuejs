@@ -37,6 +37,13 @@ export default {
 <style scoped lang="scss">
 #footer {
 
+  #footer-text {
+    height: 500px;
+    background-image: url("../assets/img/footer2x.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
   #copyright {
     text-align: center;
     padding: 30px 0;
