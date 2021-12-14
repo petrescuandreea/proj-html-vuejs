@@ -8,7 +8,7 @@
                   {{ card.title }}
               </h3>
 
-              <div>
+              <div class="line">
                   {{ card.line }}
               </div>
 
@@ -45,7 +45,7 @@ export default {
                   info: 'sushi image',
                   title: 'perfect for groups',
                   line: '',
-                  text: 'Qua eu proin sit massa condimentum. Volutpat non pulvinar aliquet nunc. Orci elementum in aliquet a gravida vivamus aliquam turpis vitae-',
+                  text: 'Qua eu proin sit massa condimentum. Volutpat non pulvinar aliquet nunc. Orci elementum in aliquet a gravida vivamus aliquam turpis vitae.',
                   button: 'make a reservation'
               },
               {
@@ -64,6 +64,54 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+#reservations {
+    padding: 80px 0;
+    
+    .center-container {
+        width: 75%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .card {
+            width: calc(85% / 3);
+            margin-right: 5%;
+            margin-bottom: 70px;
+            text-align: center;
+
+            h3 {
+                text-transform: uppercase;
+                margin: 30px 0;
+            }
+
+            .line {
+                width: 80px;
+                border-bottom: 1px solid #dadada;
+                margin: 0 auto 30px auto;
+            }
+
+            p {
+                color: #676059;
+                line-height: 25px;
+                margin-bottom: 40px;
+            }
+
+            .btn {
+                text-transform: uppercase;
+                font-size: 12px;
+                border: 1px solid #dadada;
+                padding: 10px 30px;
+                display: inline;
+                cursor: pointer;
+
+                &:hover {
+                    border-color: black;
+                }
+            }
+        }
+    }
+}
 
 
 </style>
