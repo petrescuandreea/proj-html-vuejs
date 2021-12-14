@@ -35,7 +35,7 @@
 
 <script>
 export default {
-  name: 'AppSection1',
+  name: 'CaliforniaRollsProduct',
 }
 </script>
 

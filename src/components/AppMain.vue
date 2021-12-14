@@ -1,6 +1,6 @@
 <template>
     <div>
-        <AppSection1/>
+        <CaliforniaRollsProduct/>
         <AppSection2/>
         <AppSection3/>
     </div>
@@ -8,14 +8,14 @@
 
 <script>
 
-import AppSection1 from '@/components/AppSection1.vue';
+import CaliforniaRollsProduct from '@/components/CaliforniaRollsProduct.vue';
 import AppSection2 from '@/components/AppSection2.vue';
 import AppSection3 from '@/components/AppSection3.vue';
 
 export default {
   name: 'AppMain',
   components: {
-    AppSection1,
+    CaliforniaRollsProduct,
     AppSection2,
     AppSection3,
   }
