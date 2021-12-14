@@ -33,6 +33,38 @@
 <script>
 export default {
   name: 'AppFooter',
+  data() {
+      return {
+        // creo array di oggetti con le info utili dei canali social che saranno inviate al componente figlio tramite prop 
+         socialMediaChannels: [
+              {
+                  url: '#',
+                  icon: 'fab fa-facebook-f',
+                  alt: 'facebook logo'
+              },
+              {
+                  url: '#',
+                  icon: 'fab fa-twitter',
+                  alt: 'twitter logo'
+              },
+              {
+                  url: '#',
+                  icon: 'fab fa-youtube',
+                  alt: 'youtube logo'
+              },
+              {
+                  url: '#',
+                  icon: 'fab fa-instagram',
+                  alt: 'instagram logo'
+              },
+              {
+                  url: '#',
+                  icon: 'fab fa-linkedin-in',
+                  alt: 'linkedin logo'
+              }
+          ]
+      }
+  }
 }
 </script>
 
