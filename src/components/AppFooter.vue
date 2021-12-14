@@ -7,7 +7,9 @@
           <img src="../assets/img/logo-restaurant.png" alt="Avada restaurant logo">
 
           <!-- text  -->
-          <p></p>
+          <p>
+            Quam eu proin sit massa condimentum. Volutpat non pulvinar aliquet nunc. Quam eu porin sit massa contimentum.
+          </p>
 
           <!-- social media channels -->
           <div id="sm-channels">
