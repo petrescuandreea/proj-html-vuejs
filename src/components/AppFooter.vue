@@ -13,8 +13,8 @@
 
           <!-- social media channels -->
           <div id="sm-channels">
-
-
+            <!-- passo alla prop channels l'array di oggetti smChannels -->
+            <SocialMediaChannels :channels="smChannels"/>
           </div>
 
         </div>
@@ -31,12 +31,19 @@
 </template>
 
 <script>
+
+import SocialMediaChannels from '@/components/SocialMediaChannels.vue';
+
 export default {
   name: 'AppFooter',
+  components: {
+    SocialMediaChannels,
+
+  },
   data() {
       return {
-        // creo array di oggetti con le info utili dei canali social che saranno inviate al componente figlio tramite prop 
-         socialMediaChannels: [
+        // creo array di oggetti con le info utili dei canali social che saranno inviate al componente figlio SocialMediaChannels tramite la prop channels
+         smChannels: [
               {
                   url: '#',
                   icon: 'fab fa-facebook-f',
