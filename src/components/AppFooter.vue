@@ -4,7 +4,7 @@
       <div id="footer-text">
         <div class="content">
           <!-- logo  -->
-          <img src="" alt="">
+          <img src="../assets/img/logo-restaurant.png" alt="Avada restaurant logo">
 
           <!-- text  -->
           <p></p>
