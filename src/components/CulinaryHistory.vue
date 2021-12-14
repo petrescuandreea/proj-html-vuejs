@@ -26,7 +26,7 @@
                     </div>
 
                     <!-- button  -->
-                    <div class="btn bg-white">Explore the menu</div>
+                    <button>Explore the menu</button>
                 </div>
             </div>
           </div>
@@ -107,15 +107,17 @@ export default {
                         }
                     }
         
-                    .btn {
+                    button {
                         text-transform: uppercase;
                         font-size: 12px;
                         border: 1px solid white;
+                        background-color: black;
+                        color: white;
                         padding: 10px 30px;
                         display: inline;
                         cursor: pointer;
         
-                        &.bg-white:hover{
+                        &:hover{
                             color: black;
                             background-color: white;
                         }
