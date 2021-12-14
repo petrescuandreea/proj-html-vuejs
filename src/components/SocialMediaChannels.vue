@@ -21,5 +21,35 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+#sm-channels {
+    ul {
+        margin: 40px 0;
+
+        li {
+            display: inline;
+
+            a {
+                cursor: pointer;
+                padding: 10px 15px;
+                background-color: white;
+                border-radius: 50%;
+                text-align: center;
+                margin: 0 5px;
+
+                &:hover {
+                    background-color: darkgray;
+
+                    i {
+                        color: blue
+                    }
+                }
+
+                i {
+                    color: black;
+                }
+            }
+        }
+    }
+}
 
 </style>
