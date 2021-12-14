@@ -16,9 +16,9 @@
                   {{ card.text }}
               </p>
 
-              <div class="btn">
+              <button>
                   {{ card.button }}
-              </div>
+              </button>
           </div>
 
       </div>
@@ -97,10 +97,11 @@ export default {
                 margin-bottom: 40px;
             }
 
-            .btn {
+            button {
                 text-transform: uppercase;
                 font-size: 12px;
                 border: 1px solid #dadada;
+                background-color: white;
                 padding: 10px 30px;
                 display: inline;
                 cursor: pointer;
