@@ -50,7 +50,7 @@ export default {
     background-color: rgba(3,3,3,255);
 
     span {
-      font-size: 15px;
+      font-size: 10px;
       color: white;
     }
   }
