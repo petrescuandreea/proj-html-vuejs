@@ -1,7 +1,7 @@
 <template>
     <div>
         <CaliforniaRollsProduct/>
-        <AppSection2/>
+        <Reservations/>
         <AppSection3/>
     </div>
 </template>
@@ -9,14 +9,14 @@
 <script>
 
 import CaliforniaRollsProduct from '@/components/CaliforniaRollsProduct.vue';
-import AppSection2 from '@/components/AppSection2.vue';
+import Reservations from '@/components/Reservations.vue';
 import AppSection3 from '@/components/AppSection3.vue';
 
 export default {
   name: 'AppMain',
   components: {
     CaliforniaRollsProduct,
-    AppSection2,
+    Reservations,
     AppSection3,
   }
 }

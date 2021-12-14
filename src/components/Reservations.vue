@@ -28,7 +28,7 @@
 
 <script>
 export default {
-  name: 'AppSection2',
+  name: 'Reservations',
   data() {
       return {
           cards: [
