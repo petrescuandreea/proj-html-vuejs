@@ -37,7 +37,7 @@
 
 <script>
 export default {
-  name: 'AppSection3',
+  name: 'CulinaryHistory',
 }
 </script>
 
