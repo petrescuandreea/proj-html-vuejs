@@ -19,7 +19,9 @@
 
       <!-- copyright  -->
       <div id="copyright">
-        <span></span>
+        <span>
+          Copyright 2012 - 2019 Avada | All Rights Reserved | Powered by WordPress | ThemeFusion
+        </span>
       </div>
 
     </div>
