@@ -35,5 +35,11 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+#braised-abalone-product {
+    height: 700px;
+    background-image: url("../assets/img/hero42x.jpg");
+    background-size: cover;
+    background-position: center;
+}
 
 </style>
