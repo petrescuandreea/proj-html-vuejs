@@ -5,6 +5,7 @@
         <CulinaryHistory/>
         <Team/>
         <KungPaoChicken/>
+        <Bulletin/>
     </div>
 </template>
 
@@ -15,6 +16,7 @@ import Reservations from '@/components/Reservations.vue';
 import CulinaryHistory from '@/components/CulinaryHistory.vue';
 import Team from '@/components/Team.vue';
 import KungPaoChicken from '@/components/KungPaoChicken.vue';
+import Bulletin from '@/components/Bulletin.vue';
 
 export default {
   name: 'AppMain',
@@ -24,6 +26,7 @@ export default {
     CulinaryHistory,
     Team,
     KungPaoChicken,
+    Bulletin,
   }
 }
 </script>
