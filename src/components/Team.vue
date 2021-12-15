@@ -50,6 +50,9 @@
                 </div>
             </div>
 
+            <div class="cards">
+
+            </div>
             <div class="card">
                 <!-- member name  -->
                 <span></span>
@@ -97,7 +100,30 @@
 <script>
 export default {
   name: 'Team',
-  
+  data() {
+      return {
+          cards: [
+              {
+                  image:'info52x.jpg',
+                  name: 'mary maxey',
+                  dailyNewspaper: 'the guardian',
+                  star:'fas fa-star',
+                  line: '',
+                  text: 'Non arcu mauris tortor ultrices mollis tellus eusimod fermentum. Habitant amet tincidunt id sapien accumsan sed.',
+                  button: 'read full article'
+              },
+              {
+                  image:'info12x.jpg',
+                  name: 'patrick monroe',
+                  dailyNewspaper: 'globe and mail',
+                  star:'fas fa-star',
+                  line: '',
+                  text: 'Vivamus magna justo, lacinia eget consectetur sed,convallis at tellus. Nulla porttitor accumsan tincidunt.',
+                  button: 'read full article'
+              },
+          ]
+      }
+  }
 }
 </script>
 
