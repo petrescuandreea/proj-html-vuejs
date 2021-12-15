@@ -8,6 +8,7 @@
         <Bulletin/>
         <Takeout/>
         <Menu/>
+        <BraisedProduct/>
     </div>
 </template>
 
@@ -21,6 +22,7 @@ import KungPaoChicken from '@/components/KungPaoChicken.vue';
 import Bulletin from '@/components/Bulletin.vue';
 import Takeout from '@/components/Takeout.vue';
 import Menu from '@/components/Menu.vue';
+import BraisedProduct from '@/components/BraisedProduct.vue';
 
 export default {
   name: 'AppMain',
@@ -33,6 +35,7 @@ export default {
     Bulletin,
     Takeout,
     Menu,
+    BraisedProduct,
   }
 }
 </script>
