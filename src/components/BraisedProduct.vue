@@ -48,10 +48,11 @@ export default {
         padding: 80px 60px;
 
         .title {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
+            // display: flex;
+            // justify-content: space-between;
+            // align-items: flex-start;
             color: white;
+            position: relative;
 
             h2 {
                 font-size: 38px;
@@ -59,7 +60,15 @@ export default {
                 line-height: 50px;
                 margin-bottom: 60px;
             }
+
+            .price {
+                font-size: 12px;
+                position: absolute;
+                top: 10px;
+                right: 0;
+            }
         }
+
 
         .line {
             width: 60px;
