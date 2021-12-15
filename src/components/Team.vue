@@ -35,13 +35,15 @@
                     <div class="line"></div>
 
                     <!-- text  -->
-                    <p>
-                        Non arcu mauris tortor ultrices mollis tellus euismod fermentum. Habitant amet tincidunt id sapien accumsan sed at.
-                    </p>
+                    <div class="text">
+                        <p>
+                            Non arcu mauris tortor ultrices mollis tellus euismod fermentum. Habitant amet tincidunt id sapien accumsan sed at.
+                        </p>
 
-                    <p>
-                        Mmalesuada ullamcorper amet. Pertium pertium dignissim nisi.
-                    </p>
+                        <p>
+                            Mmalesuada ullamcorper amet. Pertium pertium dignissim nisi.
+                        </p>
+                    </div>
 
                     <!-- button  -->
                     <button>
@@ -53,33 +55,39 @@
             <!-- team cards  -->
             <div class="cards">
                 <div class="card" v-for="card, i in cards" :key="i">
-                    <!-- member name  -->
-                    <span>{{ card.name }}</span>
-
-                    <!-- daily newspaper name  -->
-                    <h3>{{ card.dailyNewspaper }}</h3>
-
-                    <!-- stars  -->
-                    <div>
-                        <i :class="card.star"></i>
-                        <i :class="card.star"></i>
-                        <i :class="card.star"></i>
-                        <i :class="card.star"></i>
-                        <i :class="card.star"></i>
+                    <div class="card-bg">
+                        <img :src="require(`../assets/img/${card.image}`)" :alt="card.name">
                     </div>
 
-                    <!-- line  -->
-                    <div class="line"></div>
+                    <div class="text">
+                        <!-- member name  -->
+                        <span>{{ card.name }}</span>
 
-                    <!-- text  -->
-                    <p>
-                        {{ card.text }}
-                    </p>
+                        <!-- daily newspaper name  -->
+                        <h3>{{ card.dailyNewspaper }}</h3>
 
-                    <!-- button  -->
-                    <button>
-                        {{ card.button }}
-                    </button>
+                        <!-- stars  -->
+                        <div class="stars">
+                            <i :class="card.star"></i>
+                            <i :class="card.star"></i>
+                            <i :class="card.star"></i>
+                            <i :class="card.star"></i>
+                            <i :class="card.star"></i>
+                        </div>
+
+                        <!-- line  -->
+                        <div class="line"></div>
+
+                        <!-- text  -->
+                        <p>
+                            {{ card.text }}
+                        </p>
+
+                        <!-- button  -->
+                        <button>
+                            {{ card.button }}
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -139,8 +147,58 @@ export default {
             margin: 0 auto 40px auto;
         }
 
+        // general rules 
+        span {
+            font-size: 12px;
+        }
+
+        h3 {
+            font-size: 30px;
+        }
+
+        .stars {
+            i {
+                margin-right: 5px;
+            }
+        }
+
+        .line {
+            width: 60px;
+            margin-left: 0;
+        }
+
+        p {
+            font-size: 15px;
+            line-height: 25px;
+            padding-bottom: 20px;
+        }
+
+        button {
+            font-size: 12px;
+            border: 1px solid white;
+            background-color: black;
+            color: white;
+            padding: 10px 30px;
+            cursor: pointer;
+            margin-top: 20px;
+
+            &:hover{
+                color: black;
+                background-color: white;
+            }
+        }
+
+        .stars, h3 {
+            margin: 30px 0;
+        }
+
+        span, h3, button {
+            text-transform: uppercase;
+        }
+
         .extend-card {
             height: 650px;
+            overflow: hidden;
 
             .image-col {
                 width: 50%;
@@ -167,56 +225,12 @@ export default {
                     transform: scale(1.05);
                 }
 
-                span {
-                    font-size: 12px;
+                .text {
+                    max-height: 170px;
+                    overflow: hidden;
                 }
 
-                h3 {
-                    font-size: 30px;
-                }
-
-                .stars {
-                    i {
-                        margin-right: 5px;
-                    }
-                }
-
-                .line {
-                    width: 60px;
-                    margin-left: 0;
-                }
-
-                p {
-                    font-size: 15px;
-                    line-height: 25px;
-                    margin-bottom: 20px;
-                }
-
-                button {
-                    font-size: 12px;
-                    border: 1px solid white;
-                    background-color: black;
-                    color: white;
-                    padding: 10px 30px;
-                    cursor: pointer;
-                    margin-top: 20px;
-    
-                    &:hover{
-                        color: black;
-                        background-color: white;
-                    }
-                }
-
-                .stars, h3 {
-                    margin: 30px 0;
-                }
-
-                span, h3, button {
-                    text-transform: uppercase;
-                }
             }
-
-
         }
 
         .extend-card::after {
@@ -225,6 +239,50 @@ export default {
             clear: both;
         }
 
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 40px 0;
+
+            .card {
+                width: 45% ;
+                height: 600px;
+                position: relative;
+                
+
+                .card-bg , img {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                .text {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    color: white;
+                    padding: 100px;
+                    background: linear-gradient(180deg, black, rgba(0, 0, 0, 0.2));
+
+                    p {
+                        max-height: 80px;
+                        overflow: hidden;
+                    }
+
+                    button {
+                        background-color: transparent;
+
+                        &:hover {
+                            background-color: white;
+                        }
+                    }
+                }
+
+            }
+        }
     }
 }
 
