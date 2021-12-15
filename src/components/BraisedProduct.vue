@@ -3,7 +3,7 @@
         <div class="content-container">
             <!-- title  -->
             <div class="title">
-                <h2></h2>
+                <h2>Braised Abalone</h2>
                 <span class="price">
                     &#36;52
                 </span>
