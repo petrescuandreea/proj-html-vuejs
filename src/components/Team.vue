@@ -162,11 +162,6 @@ export default {
             }
         }
 
-        .line {
-            width: 60px;
-            margin-left: 0;
-        }
-
         p {
             font-size: 15px;
             line-height: 25px;
@@ -265,6 +260,11 @@ export default {
                     color: white;
                     padding: 100px;
                     background: linear-gradient(180deg, black, rgba(0, 0, 0, 0.2));
+
+                    .line {
+                        width: 60px;
+                        margin-left: 0;
+                    }
 
                     p {
                         max-height: 80px;
