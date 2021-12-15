@@ -12,5 +12,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-
+#kung-pao-chicken {
+    height: 500px;
+    background-image: url("../assets/img/page52x.jpg");
+    background-size: cover;
+}
 </style>
