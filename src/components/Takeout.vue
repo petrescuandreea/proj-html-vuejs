@@ -70,6 +70,7 @@ export default {
         
             .content {
                 margin: 110px 0;
+                color: #676059;
         
                 .content-top {
                     display: flex;
@@ -77,7 +78,7 @@ export default {
         
                     .line {
                         width: 60px;
-                        border-bottom: 2px solid white;
+                        border-bottom: 2px solid;
                         margin-right: 60px;
                     }
         
@@ -94,6 +95,7 @@ export default {
                     h1 {
                         font-size: 38px;
                         text-transform: uppercase;
+                        color:white;
                         line-height: 50px;
                         margin: 40px 0;
                     }
