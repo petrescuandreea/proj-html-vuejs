@@ -57,7 +57,6 @@ export default {
                 font-size: 38px;
                 text-transform: uppercase;
                 line-height: 50px;
-                width: 50%;
                 margin-bottom: 60px;
             }
         }
