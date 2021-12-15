@@ -12,8 +12,14 @@
               </div>
 
               <div class="card-text">
-                  <h3></h3>
-                  <p></p>
+                  <h3>
+                      
+                  </h3>
+
+
+                  <p>
+
+                  </p>
               </div>
           </div>
       </div>
@@ -24,6 +30,27 @@
 <script>
 export default {
   name: 'Bulletin',
+  data() {
+      return {
+          cards: [
+              {
+                  image:'blog92x-400x458',
+                  title:'the best coffee in town',
+                  info:'By admin | January 7th, 2020 | Categories: News'
+              },
+              {
+                  image:'blog72x-400x458',
+                  title:'discover our new menu',
+                  info:'By admin | January 7th, 2020 | Categories: News'
+              },
+              {
+                  image:'blog82x-400x458',
+                  title:'we now accept square!',
+                  info:'By admin | January 7th, 2020 | Categories: News'
+              },
+          ]
+      }
+  }
 }
 </script>
 
