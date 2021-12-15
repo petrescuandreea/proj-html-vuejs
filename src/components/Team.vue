@@ -2,34 +2,51 @@
     <section id="team">
         <div class="center-container">
             <h2>
-
+                What critics are saying about us
             </h2>
+
+            <!-- line  -->
+            <div class="line"></div>
 
             <div class="extend-card">
                 <!-- image column  -->
                 <div class="image-col">
-                    <img src="" alt="">
+                    <img src="../assets/img/blog72x-600x687.jpg" alt="team member's image">
                 </div>
 
                 <!-- text column  -->
                 <div class="text-col">
                     <!-- member name  -->
-                    <span></span>
+                    <span>meggy stewart</span>
 
                     <!-- daily newspaper name  -->
-                    <span></span>
+                    <h3>new york times</h3>
 
                     <!-- stars  -->
-                    <div></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
 
                     <!-- line  -->
-                    <div></div>
+                    <div class="line"></div>
 
                     <!-- text  -->
-                    <p></p>
+                    <p>
+                        Non arcu mauris tortor ultrices mollis tellus euismod fermentum. Habitant amet tincidunt id sapien accumsan sed at.
+                    </p>
+
+                    <p>
+                        Mmalesuada ullamcorper amet. Pertium pertium dignissim nisi.
+                    </p>
 
                     <!-- button  -->
-                    <button></button>
+                    <button>
+                        read full article
+                    </button>
                 </div>
             </div>
 
@@ -38,7 +55,7 @@
                 <span></span>
 
                 <!-- daily newspaper name  -->
-                <span></span>
+                <h3></h3>
 
                 <!-- stars  -->
                 <div></div>
@@ -58,7 +75,7 @@
                 <span></span>
 
                 <!-- daily newspaper name  -->
-                <span></span>
+                <h3></h3>
 
                 <!-- stars  -->
                 <div></div>
@@ -80,11 +97,120 @@
 <script>
 export default {
   name: 'Team',
- 
+  
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+#team {
+    padding: 80px 0; 
+
+    .center-container {
+        width: 75%;
+        margin: 0 auto;
+
+        h2 {
+            text-align: center;
+            font-style: italic;
+            font-weight: normal;
+            margin-bottom: 20px;
+        }
+
+        .line {
+            width: 40px;
+            border-bottom: 1px solid #dadada;
+            margin: 0 auto 40px auto;
+        }
+
+        .extend-card {
+            height: 650px;
+
+            .image-col {
+                width: 50%;
+                height: 100%;
+                float: left;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .text-col {
+                width: 50%;
+                height: 100%;
+                float: left;
+                background-color: black;
+                color: white;
+                padding: 110px;
+                cursor: pointer;
+                transition: all;
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+
+                span {
+                    font-size: 12px;
+                }
+
+                h3 {
+                    font-size: 30px;
+                }
+
+                .stars {
+                    i {
+                        margin-right: 5px;
+                    }
+                }
+
+                .line {
+                    width: 60px;
+                    margin-left: 0;
+                }
+
+                p {
+                    font-size: 15px;
+                    line-height: 25px;
+                    margin-bottom: 20px;
+                }
+
+                button {
+                    font-size: 12px;
+                    border: 1px solid white;
+                    background-color: black;
+                    color: white;
+                    padding: 10px 30px;
+                    cursor: pointer;
+                    margin-top: 20px;
+    
+                    &:hover{
+                        color: black;
+                        background-color: white;
+                    }
+                }
+
+                .stars, h3 {
+                    margin: 30px 0;
+                }
+
+                span, h3, button {
+                    text-transform: uppercase;
+                }
+            }
+
+
+        }
+
+        .extend-card::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+    }
+}
+
 
 </style>
