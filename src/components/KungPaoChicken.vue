@@ -16,5 +16,16 @@ export default {
     height: 500px;
     background-image: url("../assets/img/page52x.jpg");
     background-size: cover;
+    position: relative;
+    text-align: center;
+
+    span {
+        font-size: 12px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: white;
+        position: absolute;
+        bottom: 15px;
+    }
 }
 </style>
