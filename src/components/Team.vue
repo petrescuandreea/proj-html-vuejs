@@ -198,7 +198,6 @@ export default {
 
         .extend-card {
             height: 650px;
-            overflow: hidden;
 
             .image-col {
                 width: 50%;
