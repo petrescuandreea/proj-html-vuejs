@@ -1,12 +1,14 @@
 <template>
     <section id="team">
         <div class="center-container">
-            <h2>
-                What critics are saying about us
-            </h2>
+            <div id="title">
+                <h2>
+                    What critics are saying about us
+                </h2>
 
-            <!-- line  -->
-            <div class="line"></div>
+                <!-- line  -->
+                <div class="line-title"></div>
+            </div>
 
             <div class="extend-card">
                 <!-- image column  -->
@@ -141,10 +143,10 @@ export default {
             margin-bottom: 20px;
         }
 
-        .line {
+        .line-title {
             width: 40px;
             border-bottom: 1px solid #dadada;
-            margin: 0 auto 40px auto;
+            margin:0 auto 40px auto;
         }
 
         // general rules 
@@ -154,12 +156,20 @@ export default {
 
         h3 {
             font-size: 30px;
+            color: white;;
         }
 
         .stars {
             i {
                 margin-right: 5px;
+                color: white;;
             }
+        }
+
+        .line {
+            width: 60px;
+            border-bottom: 1px solid #676059;
+            margin-left: 0;
         }
 
         p {
@@ -210,7 +220,7 @@ export default {
                 height: 100%;
                 float: left;
                 background-color: black;
-                color: white;
+                color: #676059;
                 padding: 110px;
                 cursor: pointer;
                 transition: all;
@@ -244,6 +254,7 @@ export default {
                 width: 45% ;
                 height: 600px;
                 position: relative;
+                color: #676059;
                 
 
                 .card-bg , img {
@@ -257,14 +268,8 @@ export default {
                     position: absolute;
                     top: 0;
                     left: 0;
-                    color: white;
                     padding: 100px;
                     background: linear-gradient(180deg, black, rgba(0, 0, 0, 0.2));
-
-                    .line {
-                        width: 60px;
-                        margin-left: 0;
-                    }
 
                     p {
                         max-height: 80px;
