@@ -67,7 +67,7 @@ section {
         width: 45%;
         height: 100%;
         float: left;
-        color: white;
+        color: #676059;
         background-color: rgba(3,3,3,255);
         padding: 40px 80px 0 80px;
     
@@ -80,7 +80,7 @@ section {
     
                 .line {
                     width: 60px;
-                    border-bottom: 2px solid white;
+                    border-bottom: 2px solid;
                     margin-right: 60px;
                 }
     
@@ -98,6 +98,7 @@ section {
                 h1 {
                     font-size: 55px;
                     text-transform: uppercase;
+                    color: white;
                     margin: 40px 0;
                 }
     
