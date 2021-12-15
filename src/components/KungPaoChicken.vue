@@ -1,6 +1,6 @@
 <template>
   <section id="kung-pao-chicken">
-      <span>kung pao chicken - &#65129;22</span>
+      <span>kung pao chicken - &#65129;32</span>
   </section>
 </template>
 
