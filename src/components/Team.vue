@@ -50,47 +50,37 @@
                 </div>
             </div>
 
+            <!-- team cards  -->
             <div class="cards">
+                <div class="card" v-for="card, i in cards" :key="i">
+                    <!-- member name  -->
+                    <span>{{ card.name }}</span>
 
-            </div>
-            <div class="card">
-                <!-- member name  -->
-                <span></span>
+                    <!-- daily newspaper name  -->
+                    <h3>{{ card.dailyNewspaper }}</h3>
 
-                <!-- daily newspaper name  -->
-                <h3></h3>
+                    <!-- stars  -->
+                    <div>
+                        <i :class="card.star"></i>
+                        <i :class="card.star"></i>
+                        <i :class="card.star"></i>
+                        <i :class="card.star"></i>
+                        <i :class="card.star"></i>
+                    </div>
 
-                <!-- stars  -->
-                <div></div>
+                    <!-- line  -->
+                    <div class="line"></div>
 
-                <!-- line  -->
-                <div></div>
+                    <!-- text  -->
+                    <p>
+                        {{ card.text }}
+                    </p>
 
-                <!-- text  -->
-                <p></p>
-
-                <!-- button  -->
-                <button></button>
-            </div>
-
-            <div class="card">
-                 <!-- member name  -->
-                <span></span>
-
-                <!-- daily newspaper name  -->
-                <h3></h3>
-
-                <!-- stars  -->
-                <div></div>
-
-                <!-- line  -->
-                <div></div>
-
-                <!-- text  -->
-                <p></p>
-
-                <!-- button  -->
-                <button></button>
+                    <!-- button  -->
+                    <button>
+                        {{ card.button }}
+                    </button>
+                </div>
             </div>
         </div>
 
